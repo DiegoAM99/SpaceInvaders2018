@@ -27,4 +27,29 @@ public class Nave {
         catch(IOException ramon){
         }
     }
+
+    public boolean isPulsadoIzquierda() {
+        return pulsadoIzquierda;
+    }
+
+    public void setPulsadoIzquierda(boolean pulsadoIzquierda) {
+        this.pulsadoIzquierda = pulsadoIzquierda;
+    }
+
+    public boolean isPulsadoDerecha() {
+        return pulsadoDerecha;
+    }
+
+    public void setPulsadoDerecha(boolean pulsadoDerecha) {
+        this.pulsadoDerecha = pulsadoDerecha;
+    }
+    
+    //método para mover a la nave
+    public void mueve(){
+        if (pulsadoIzquierda && x>0){
+        x--;
+        }
+        
+        //TODO falta mover a la derecha
+    }
 }
