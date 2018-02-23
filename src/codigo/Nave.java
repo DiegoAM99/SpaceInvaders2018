@@ -49,10 +49,10 @@ public class Nave {
     //método para mover a la nave
     public void mueve(){
         if (pulsadoIzquierda && x>0){
-        x-=5;
+        x--;
         }
         if (pulsadoDerecha && x < anchoPantalla - imagen.getWidth(null)){
-        x+=5;
+        x++;
         }
         //TODO falta mover a la derecha
     }
