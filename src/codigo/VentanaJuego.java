@@ -20,12 +20,12 @@ import javax.swing.Timer;
  * @author Diego Álvarez
  */
 public class VentanaJuego extends javax.swing.JFrame {
-    static int ANCHOPANTALLA = 600;
-    static int ALTOPANTALLA = 450;
+    static int ANCHOPANTALLA = 800;
+    static int ALTOPANTALLA = 600;
     
     BufferedImage buffer = null;
     int contador=0;
-    Nave miNave = new Nave();
+    Nave miNave = new Nave(ANCHOPANTALLA);
     
     //Bucle de animación del juego
     //en este caso, es un hilo de ejecución nuevo que encarga
