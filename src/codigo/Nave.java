@@ -29,6 +29,7 @@ public class Nave {
         }
         anchoPantalla = _anchoPantalla;
     }
+    
 
     public boolean isPulsadoIzquierda() {
         return pulsadoIzquierda;
