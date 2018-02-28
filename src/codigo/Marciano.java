@@ -20,7 +20,8 @@ public class Marciano {
     
     private int anchoPantalla;
     
-    public boolean direccion = false; //si es false es que se mueve a la izquierda
+    
+    
     public Marciano(int _anchoPantalla){
         try {
         imagen = ImageIO.read(getClass().getResource("/imagenes/marcianito1.png"));
@@ -32,7 +33,7 @@ public class Marciano {
     }
     
     //método para mover a la nave
-    public void mueve(){
+    public void mueve(boolean direccion){
         if(direccion){
             if(x < anchoPantalla - imagen.getWidth(null) && direccion){
         x++;
