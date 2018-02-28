@@ -20,6 +20,7 @@ public class Marciano {
     
     private int anchoPantalla;
     
+    public boolean vida = true;
     
     
     public Marciano(int _anchoPantalla){
@@ -33,16 +34,17 @@ public class Marciano {
     }
     
     //método para mover a la nave
-    public void mueve(boolean direccion){
-        if(direccion){
-            if(x < anchoPantalla - imagen.getWidth(null) && direccion){
-        x++;
+    public void mueve(boolean direccion) {
+        if (direccion) {
+            if (x < anchoPantalla - imagen.getWidth(null)) {
+                x++;
+            }
         }
-      }
-        else{
-            if(x > 0){
+        else {
+            if (x > 0 ){
                 x--;
             }
         }
+
     }
 }
