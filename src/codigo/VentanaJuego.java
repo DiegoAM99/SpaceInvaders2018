@@ -76,12 +76,14 @@ public class VentanaJuego extends javax.swing.JFrame {
                 imagenes[i*4 + j] = imagenes[i*4 + j].getScaledInstance(32, 32, Image.SCALE_SMOOTH);
             }
         }
+        imagenes[20] = plantilla.getSubimage(2,320, 66, 32);
+        imagenes[21] = plantilla.getSubimage(66,320, 64, 32);
         //hay que quitar la opcion "resizable" del jpanel para que se ajuste
         //correctamente
         setSize(ANCHOPANTALLA, ALTOPANTALLA);
         buffer = (BufferedImage) jPanel1.createImage(ANCHOPANTALLA,ALTOPANTALLA);
         buffer.createGraphics();
-        miNave.imagen = imagenes[19];
+        miNave.imagen = imagenes[21];
         miNave.x = ANCHOPANTALLA/2 - miNave.imagen.getWidth(this)/2;
         miNave.y = ALTOPANTALLA - miNave.imagen.getHeight(this) - 40;
        
