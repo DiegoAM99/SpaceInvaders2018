@@ -24,17 +24,17 @@ public class Marciano {
     
     
     public Marciano(int _anchoPantalla){
-        try {
-        imagen = ImageIO.read(getClass().getResource("/imagenes/marcianito1.png"));
-        imagen2 = ImageIO.read(getClass().getResource("/imagenes/marcianito2.png"));
-        }
-        catch(IOException ramon){
-        }
+//        try {
+//        imagen = ImageIO.read(getClass().getResource("/imagenes/marcianito1.png"));
+//        imagen2 = ImageIO.read(getClass().getResource("/imagenes/marcianito2.png"));
+//        }
+//        catch(IOException ramon){
+//        }
         anchoPantalla = _anchoPantalla;
     }
     
     //método para mover a la nave
-    public void mueve(boolean direccion) {
+     public void mueve(boolean direccion) {
         if (direccion) {
             if (x < anchoPantalla - imagen.getWidth(null)) {
                 x++;
